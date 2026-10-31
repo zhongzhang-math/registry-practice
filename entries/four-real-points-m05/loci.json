@@ -1,0 +1,25 @@
+{
+  "api": 1,
+  "id": "four-real-points-m05",
+  "title": "Four real points and M̄₀,₅(ℝ)",
+  "hook": "Four points on a line give a point in the moduli space of 5 points (where the fifth point is infinity)",
+  "alt": "Four numbered dots slide along a line. Beside them a red dot wanders across a disk cut by curved lines into twelve labelled cells, filling the cell it is in; four small dashed circles sit where three lines would meet, and a line brightens as the dot approaches it.",
+  "author": "@zhongzhang-math",
+  "license": "MIT",
+  "tags": ["Topology", "Algebraic geometry", "Geometry"],
+  "runtime": "js",
+  "entry": "index.js",
+  "render": "canvas2d",
+  "colors": { "main": "#ff2e74", "secondary": "#22e0e8", "bg": "#050508", "fg": "#ecebf5" },
+  "params": [
+    { "key": "blowup", "type": "toggle", "label": "Blow up triple points", "default": true }
+  ],
+  "presets": [
+    { "label": "Blow-up on: 12 pentagons", "params": { "blowup": true },
+      "note": "Every cell has five sides: two of them lie on dashed circles." },
+    { "label": "Blow-up off: 12 triangles", "params": { "blowup": false },
+      "note": "Three lines cross at each of four points, and every cell is a triangle." }
+  ],
+  "cycle": 60,
+  "motion": "pause"
+}
